@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Water Storage | Emergency Preparedness</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/chart.css">
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+		<script type="text/javascript" src="js/chart.js" defer></script>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul class="nav">
+					<li class="current">
+						<a href="index.html" data-hover="Get Informed">Get Informed</a>
+					</li>
+					<li>
+						<a href="getprepared.html" data-hover="Get Prepared">Get Prepared</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id= "Introduction">
+			<h1>Why do you need to store water?</h1>
+			<p>
+				Following a disaster, such as an earthquake or wildfire, clean water may
+				not be available. Your regular water source could be cut-off or
+				compromised through contamination and may take longer than a week to
+				recover, requiring you to ensure you have a supply of water in your
+				home.
+			</p>
+			<br />
+		</div>
+		<hr class="lighter">
+		<div id="Stats">
+			<h2><span>Likelihood of a Water Outage</span></h2>
+			<h3>How likely will an earthquake of 6.7 or higher magnitude occur while you are in the Bay Area?</h3>
+			<p>How long do you plan to live in the Bay Area? Round up to the nearest answer.</p><br />
+					<select id="numYears" onchange="earthquakeProbability()">
+						<option value="0"> Select </option>
+						<option value="1">1 year</option>
+						<option value="5">5 years</option>
+						<option value="10">10 years</option>
+						<option value="30">30 years</option>
+					</select>
+			<p id="prob">
+			</p>
+			<br />
+			<h3>How close to a fault do you live?</h3>
+			<div style="display: flex;">
+				<div id="earthquake-fault">
+					<p>
+						<img style="float: left; margin-right: 10px;" src="svg/faultline.png" width=50% height= 50%>
+						As shown in the image, the Hayward fault line runs through the East Bay. To find out how close you live
+						to a fault line, visit the link below. <br /><br />
+						<a href="https://bayquakealliance.org/howclose/">Learn more</a>
+					</p>
+				</div>
+			</div>
+			<br />
+			<div class="earthquake-details">
+			<h3>Why does an earthquake impact water supply?</h3>
+			<p>
+				East Bay Municipal Utilities District (EBMUD) has 4,100 miles of
+				pipeline and 5 treatment plants. They have predicted almost 4,000 pipe
+				breaks in the event of a 6.7 magnitude earthquake. Although EBMUD has
+				completed an extensive Seismic Improvement program (SIP), there are
+				still many vulnerabilities to earthquakes in the system.
+			</p>
+			<p>
+				EBMUD’s system is particularly vulnerable (compared to other Bay Area
+				water utilities because:
+				<ul>
+					<li>
+						Interdependencies with EBMUD's power system.</li>
+					<li>Soil types and geography: areas susceptible to landslides,
+						liquefaction areas, etc. </li>
+					<li>Their pipes cross a major fault</li>
+					<li>They have a large number of pumping stations, many on the fault
+						(whereas some other utilities operate on flatter terrain).
+						40% of service relies on pumps. </li>
+					<li>
+						Pipes themselves are fragile due to factors such as age, material, etc.
+					</li>
+				</ul>
+			</p>
+		</div>
+		</div>
+		<br />
+
+		<hr class="lighter">
+
+		<div id= "Day with Water">
+			<h2><span>A Day with Water</span></h2>
+			<p>
+				We engage in several activities each day that need water, from showering
+				to cooking. In the event of an emergency, businesses and schools may
+				be closed, requiring you to stay at home. The map below walks through a typical day
+				with water for one person to show how many common activities require water.
+			</p>
+			<img src="svg/map.svg" alt="Day With Water map" width="100%">
+		</div>
+		<br />
+
+		<hr class="lighter">
+
+	<div id= "Usage Breakdown">
+			<h2><span>Water Usage Breakdown</span></h2>
+			<p class="bold-text">
+				The average person uses 80-100 gallons of water per day for indoor
+				activities such as cooking, using the restroom, taking a shower or bath,
+				washing hands, etc.
+
+			</p>
+			<p>
+				This estimate varies based on number of people in
+				household, type of faucets and plumbing systems, and other factors. <br />
+				Please note that the water usage breakdown shown below is missing some
+				common activities such as cleaning, laundry, watering plants, etc.
+			</p>
+
+			<img src="svg/sankey.svg" alt="Diagram that shows breakdown of water usage"
+			width=100%>
+
+			<!-- <div id="sankey-diagram" style="width: 100%; height: 500px;">
+			</div> -->
+	</div>
+
+	<br/>
+	<hr class="lighter">
+
+	<div class= "charts">
+		<!-- include loss framing by adding a "no store" button. once it's clicked, it will replace
+		the text in each section or show a paragraph that details what people would have to do
+		instead (e.g., buy water / find water / eat dry foods) -->
+		<h2><span>A Day without Water</span></h2>
+		<p>
+			How much water would you save in the event of an emergency to support your
+			everyday activities? <br />This calculator shows the hard choices that have to
+			be made living on the emergency water.
+		</p>
+		<p class="bold-text">
+			Start by selecting the total number of gallons per day you would save,
+			either for yourself or  for your household. <br />
+		</p>
+		<div id="gallon-input">
+			 <!-- container for gallon input js -->
+		</div>
+		<br />
+		<p class="bold-text">
+			Next, tally your daily water usage by entering what you think is the least
+			you need for each activity.
+		</p>
+		<p class="half-page">
+ You may find that even your rock-bottom needs aren’t met and that you have
+to store more water,  cut down your water needs, or do without.
+		</p>
+		<br />
+		<div style= "position: sticky; top: 0; float: right; padding-left:20px; padding-right: 20px;
+		padding-bottom: 10px; padding-top: 10px; border: solid 1px">
+			<h3>Available water</h3>
+		<div id="gallon-to-cups">
+			<!-- container for gallon to cups visual js -->
+		</div>
+		<p class="half-caption">
+			Each cup represents one 8-oz glass of water. Each gallon is represented <body>
+				16 cups, or 2 rows of cups.
+			</body>
+		</p>
+			</div>
+		<h3>
+			<img style='vertical-align:bottom;' src="svg/food-icon.svg" width=30px>
+		Food
+		</h3>
+		<p class="half-page">
+			How many meals do you/your household have in a day? Each meal typically requires
+			2 cups of water.
+		</p>
+		<div id="food">
+			<!-- container for food water cup units -->
+		</div>
+		<br />
+		<h3>
+			<img style='vertical-align:bottom;' src="svg/drinking-icon.svg" width=30px>
+		Drinking Water
+		</h3>
+		<p class="half-page">
+			How many 8-oz glasses of water do you/your household drink ing per day?
+		</p>
+		<div id="drinking-water">
+			<!-- container for drinking water cup units -->
+		</div>
+		<br />
+
+		<h3>
+			<img style='vertical-align:bottom;' src="svg/shower-icon.svg" width=30px>
+		Showering
+		</h3>
+		<p class="half-page">
+			How many full body rinses do you/your household have in a day? Each rinse typically
+			requires 6 cups of water.
+		</p>
+		<div id="shower">
+			<!-- container for shower cup units -->
+		</div>
+		<br />
+
+		<h3>
+			<img style='vertical-align:bottom;' src="svg/toilet-icon.svg" width=30px>
+		Toilet
+		</h3>
+		<p class="half-page">
+			How many toilet flushes do you/your household have in a day? Each flush typically
+			requires 26 cups of water.
+		</p>
+		<div id="toilet">
+			<!-- container for toilet water cup units -->
+		</div>
+		<br />
+
+		<h3>
+			<img style='vertical-align:bottom;' src="svg/hygiene-icon.svg" width=30px>
+		Hygiene
+		</h3>
+		<p class="half-page">
+			How many times do you/your household brush teeth, wash hands, and rinse
+			face in a day? Each rinse typically requires 3 cups of water.
+		</p>
+		<div id="hygiene">
+			<!-- container for hygiene water cup units -->
+		</div>
+	</div>
+	<hr class="lighter">
+
+	<footer>
+		<div class="footer">
+		<p class="subtext">
+			Website made by researchers at <a href="https://www.berkeley.edu/">UC Berkeley</a>,
+			in collaboration with <a href=https://www.ebmud.com/>EBMUD</a>.
+		</p>
+	</div>
+	</footer>
+
+</body>
+</html>

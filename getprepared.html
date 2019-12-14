@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Water Storage | Emergency Preparedness</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<ul class="nav">
+					<li>
+						<a href="index.html" data-hover="Get Informed">Get Informed</a>
+					</li>
+					<li class="current">
+						<a href="getprepared.html" data-hover="Get Prepared">Get Prepared</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id= "Introduction">
+			<h1>How do you store water?</h1>
+			<p>
+				It is critical for you to have water on hand because it can take over a
+				week for your water supply to be restored after a disaster or emergency,
+				businesses would likely be closed, and the retail price of water may
+				increase. Storing water is as simple as determining how much you need
+				and the best way to store it in your home.
+			</p>
+			<br/>
+		</div>
+
+		<hr class="lighter">
+
+		<div id= "How Much Water">
+			<h2><span>How much water do you need?</span></h2>
+			<p>
+				Individual needs vary, depending on age, health, physical condition,
+				activity, diet and climate, however the basic guideline is to store 2
+				gallons per person per day for 7 days. In other words, each person should
+				store 14 gallons of water for a 1-week emergency supply.
+			</p> <br />
+			<h3>Calculate how much water you should store.</h3>
+			<p>How many people are you storing water for including yourself?</p>
+					<select id="mySelect" onchange="myFunction()">
+						<option value="1" selected>1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>
+			<p id="result">
+				A one week supply of emergency water for one person is 14 gallons (2 gallons per person per day).
+			</p>
+
+			<!-- <script>
+			function myFunction() {
+			var x = document.getElementById("mySelect").value;
+			var galNum = x * 14;
+			document.getElementById("result").innerHTML = "A one week supply of emergency water for " +
+			x + " people is " + galNum + " gallons (2 gallons per person per day).";
+			}
+			</script> -->
+
+			<br />
+		</div>
+
+		<hr class="lighter">
+
+		<div id="Storage Methods">
+			<h2><span>What are different storage methods?</span></h2>
+			<p>
+				Based on your water needs and space available in your home, you may
+				choose to store water in one of the ways shown below. You should follow
+				container manufacturer instructions for storage and maintenance of your
+				emergency water supply, but in general you should store the water in a
+				cool, dark place or a temperature-controlled environment. You should
+				also replace emergency water that was not purchased from a store every
+				six months. If using store-bought water bottles, ensure you purchase
+				BPA-free plastic.
+			</p>
+			<br />
+
+			<div class="multiple-cards">
+				<div class="mcr-card">
+					<div class="card-header">
+						<span class="card-title">Barrels</span>
+						<span class="subtitle">55 gallons per barrel</span>
+					</div>
+					<span class="card-content">
+						<img class="card-image" src="svg/barrel.svg" />
+					</span>
+					<span class="card-footer">Disguise both large and
+						small water barrels as tables inside your home to save space.
+				</span>
+					<span class="card-link"><a href="https://www.amazon.com/Emergency-Essentials-Water-Barrel-Gallon/dp/B006KAAUSQ">
+						Purchase</a></span>
+				</div>
+				<div class="mcr-card">
+					<div class="card-header">
+						<span class="card-title">Bricks</span>
+						<span class="subtitle">3-7 gallons per brick</span>
+					</div>
+					<span class="card-content">
+						<img class="card-image" src="svg/bricks.svg" />
+					</span>
+					<span class="card-footer">Store water bricks under beds, in closets,
+					or any other temperature-controlled room.</span>
+					<span class="card-link"><a href="https://www.walmart.com/ip/WaterBrick-Blue-Polyethylene-3-5-gallon-BPA-free-Water-Storage-Container-Set-of-10/151681873?wmlspartner=wlpa&selectedSellerId=1812&adid=22222222227068828585&wl0=&wl1=g&wl2=c&wl3=175428130690&wl4=pla-284408639412&wl5=9032064&wl6=&wl7=&wl8=&wl9=pla&wl10=102975322&wl11=online&wl12=151681873&veh=sem&gclid=EAIaIQobChMIu5a18vmY5gIVErvsCh0pKQ_UEAQYAyABEgJXWvD_BwE">
+						Purchase</a></span>
+				</div>
+				<div class="mcr-card">
+					<div class="card-header">
+						<span class="card-title">Cans</span>
+						<span class="subtitle">12 ounces per can</span>
+					</div>
+					<span class="card-content">
+						<img class="card-image" src="svg/cans.svg" />
+					</span>
+					<span class="card-footer">Store in cupboards, shelves, bookcases, or
+					anywhere else that can sustain the weight.
+				</span>
+					<span class="card-link"><a href="https://www.amazon.com/Open-Water-Drinking-12-ounce-Aluminum/dp/B07C36L4QW">
+						Purchase</a></span>
+				</div>
+				<div class="mcr-card">
+					<div class="card-header">
+						<span class="card-title">Collapsible</span>
+						<span class="subtitle">3-5 gallons per unit</span>
+					</div>
+					<span class="card-content">
+						<img class="card-image" src="svg/collapsible.svg" />
+					</span>
+					<span class="card-footer">Use this to fill immediately at the time of
+						an emergency; fold and tuck away when not in use.
+				</span>
+					<span class="card-link"><a href="https://www.amazon.com/WaterStorageCube-Collapsible-Container-Outdoors-Backpack/dp/B07N8SRSCX">
+						Purchase</a></span>
+				</div>
+
+			</div>
+		<br />
+		<p class="caption">
+			<span>
+			Source: East Bay Municipal Utilities District (EBMUD)
+			</span>
+		</p>
+		<br />
+		</div>
+
+		<hr class="lighter">
+
+		<div id="How Do You Sterilize Water?">
+			<h2><span>How do you sterilize water?</span></h2>
+			<p>
+				If you have used all of your stored water and there are no other
+				reliable clean water sources, it may become necessary to treat
+				water that may not be clean or safe to use.
+				<br /> <br />
+				Treat all water of uncertain quality before using it for drinking,
+				food washing or preparation, washing dishes, brushing teeth or making
+				ice. In addition to having a bad odor and taste, contaminated water can
+				contain microorganisms (germs) that cause diseases such as dysentery,
+				cholera, typhoid and hepatitis.
+			</p>
+			<br />
+
+			<div class="sterilization">
+  			<div class="column">
+					<h3>
+						<img style='vertical-align:bottom;' src="svg/boiling-icon.svg" width=30px>
+						Boiling Water
+					</h3>
+					<p>
+						Boiling is the safest method of treating water. In a large pot or
+						kettle, bring water to a rolling boil for one full minute, keeping
+						in mind that some water will evaporate. Let the water cool before
+						drinking.
+						<br /><br />
+
+						Boiled water will taste better if you put oxygen back into it by
+						pouring the water back and forth between two clean containers. This
+						also will improve the taste of stored water.
+					</p>
+  			</div>
+			  <div class="column">
+			  	<h3>
+						<img style='vertical-align:bottom;' src="svg/chlorination-icon.svg" width=30px>
+						Chlorination
+					</h3>
+					<p>
+						You can use household liquid bleach to kill microorganisms. Use
+						only regular household liquid bleach that contains 5.25 to 6.0
+						percent sodium hypochlorite. Do not use scented bleaches, color
+						safe bleaches or bleaches with added cleaners.
+						<br /><br />
+
+						Add 16 drops (1/8 teaspoon) of bleach per gallon of water, stir and
+						let stand for 30 minutes. The water should have a slight bleach
+						odor. If it doesn’t, then repeat the dosage and let stand another
+						15 minutes. If it still does not smell of chlorine, discard it and
+						find another source of water.
+						<br /><br />
+
+						Other chemicals, such as iodine or water treatment products sold in
+						camping or surplus stores that do not contain 5.25 or 6.0 percent
+						sodium hypochlorite as the only active ingredient, are not
+						recommended and should not be used.
+					</p>
+			  </div>
+  			<div class="column">
+					<h3>
+						<img style='vertical-align:bottom' src="svg/distillation-icon.svg" width=30px>
+						Distillation
+					</h3>
+					<p>
+						While boiling and chlorination will kill most microbes in water,
+						distillation will remove microbes (germs) that resist these methods,
+						as well as heavy metals, salts and most other chemicals.
+						Distillation involves boiling water and then collection of only the
+						vapor that condenses. The condensed vapor will not include salt or
+						most other impurities.
+						<br /><br />
+						To distill, fill a pot halfway with water. Tie a cup to the handle
+						on the pot’s lid so that the cup will hang right-side-up when the
+						lid is upside-down (make sure the cup is not dangling into the
+						water) and boil the water for 20 minutes. The water that drips from
+						the lid into the cup is distilled.
+					</p>
+  			</div>
+</div>
+			<p class="caption">
+				<span>
+				Source: Ready.gov
+				</span>
+			</p>
+		<br />
+		</div>
+
+		<hr class="lighter">
+
+		<div id="Timeline">
+			<h2><span>What should you do before and during a water shut-off?</span></h2>
+			<p>
+				An overview of tasks to complete and information you should have before and during a water outage.
+			</p>
+			<section class="timeline">
+  			<ul>
+						<div id="Before">
+						<h3 class="section-head">Before a Water Outage</h3>
+					<li>
+						<div>
+							<time>BEFORE</time>
+							Determine water needs for both sanitation and drinking.
+						</div>
+					</li>
+					<li>
+						<div>
+							<time>BEFORE</time>
+							Gather and store enough water for one week.
+						</div>
+					</li>
+					<li>
+						<div>
+							<time>BEFORE</time>
+							Stock up on products to minimize emergency water needs such as face and
+							body wipes, paper plates, dry foods, etc.
+						</div>
+					</li>
+					<li>
+						<div>
+							<time>BEFORE</time>
+							Locate and understand how to use water shut-off valve.
+						</div>
+					</li>
+				</div>
+				<br />
+					<!-- <hr class="timeline-div"> -->
+					<div id="During">
+					<h3 class="section-head">During a Water Outage</h3>
+					<li>
+						<div>
+							<time>DURING</time>
+							Fill collapsible water containers immediately upon notice of emergency.
+						</div>
+					</li>
+    			<li>
+      			<div>
+        			<time>DURING</time>
+							Monitor water supply status by checking news media and EBMUD website.
+    			  </div>
+					</li>
+					<li>
+      			<div>
+        			<time>DURING</time>
+							Treat water that may not be clean or safe to use if you have used all your stored water and
+							cannot find reliable water sources.
+    			  </div>
+					</li>
+				</div>
+		</div>
+		<hr class="lighter">
+
+		<footer>
+			<div class="footer">
+			<p class="subtext">
+				Website made by researchers at <a href="https://www.berkeley.edu/">UC Berkeley</a>,
+				in collaboration with <a href="https://www.ebmud.com/">EBMUD</a>.
+			</p>
+		</div>
+		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src=js/script.js></script>
+
+	</body>
+</html>

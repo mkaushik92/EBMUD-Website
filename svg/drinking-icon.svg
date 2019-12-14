@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="47px" viewBox="0 0 39 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>drinking-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="drinking-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(4.000000, 1.000000)">
+            <path d="M15.6,43.2 C24.2156421,43.2 31.2,36.2399979 31.2,27.6544003 C31.2,21.9306685 26,12.7125351 15.6,0 C5.2,12.7125351 0,21.9306685 0,27.6544003 C0,36.2399979 6.9843579,43.2 15.6,43.2 Z" id="water-drop" fill="#96FEFF"></path>
+            <g id="Kitchen" transform="translate(6.000000, 15.000000)" stroke="#2E2F30" stroke-width="0.8">
+                <g id="glass">
+                    <polygon id="Rectangle" fill="#2E2F30" points="0 2.31724138 20.6181818 2.31724138 16.8 27.8068966 3.81818182 27.8068966"></polygon>
+                    <ellipse id="Oval" fill="#FFFFFF" cx="10.3090909" cy="1.79785969" rx="10.3090909" ry="1.79785969"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
