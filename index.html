@@ -38,18 +38,6 @@
 		<hr class="lighter">
 		<div id="Stats">
 			<h2><span>Likelihood of a Water Outage</span></h2>
-			<h3>How likely will an earthquake of 6.7 or higher magnitude occur while you are in the Bay Area?</h3>
-			<p>How long do you plan to live in the Bay Area? Round up to the nearest answer.</p>
-					<select id="numYears" onchange="earthquakeProbability()">
-						<option value="0"> Select </option>
-						<option value="1">1 year</option>
-						<option value="5">5 years</option>
-						<option value="10">10 years</option>
-						<option value="30">30 years</option>
-					</select>
-			<p id="prob">
-			</p>
-			<br />
 			<h3>How close to a fault do you live?</h3>
 			<div style="display: flex;">
 				<div id="earthquake-fault">
@@ -79,7 +67,21 @@
 				</div>
 			</div>
 			<br />
-			<div class="earthquake-details">
+			<div id="earthquake-prob">
+			<h3>How likely will an earthquake of 6.7 or higher magnitude occur while you are in the Bay Area?</h3>
+			<p>How long do you plan to live in the Bay Area? Round up to the nearest answer.</p>
+					<select id="numYears" onchange="earthquakeProbability()">
+						<option value="0"> Select </option>
+						<option value="1">1 year</option>
+						<option value="5">5 years</option>
+						<option value="10">10 years</option>
+						<option value="30">30 years</option>
+					</select>
+			<p id="prob">
+			</p>
+			</div>
+			<br />
+			<div id="earthquake-details">
 			<h3>Why does an earthquake impact water supply?</h3>
 			<p>
 				East Bay Municipal Utilities District (EBMUD) has 4,100 miles of
