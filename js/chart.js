@@ -43,7 +43,7 @@ let selectMany = null
 // all charts
 let promiseList = []
 
-promiseList.push(d3.xml("../svg/gallon.svg")
+promiseList.push(d3.xml("./svg/gallon.svg")
 .then(data => {
     gallon = data.documentElement
 }).then(() => {
@@ -62,66 +62,66 @@ promiseList.push(d3.xml("../svg/gallon.svg")
     }
 }))
 
-promiseList.push(d3.xml("../svg/cup.svg")
+promiseList.push(d3.xml("./svg/cup.svg")
 .then(data => {
     cup = data.documentElement
 }))
 
 
-promiseList.push(d3.xml("../svg/1cup.svg")
+promiseList.push(d3.xml("./svg/1cup.svg")
 .then(data => {
     oneCup = data.documentElement
 }))
 
-promiseList.push(d3.xml("../svg/2cup.svg")
+promiseList.push(d3.xml("./svg/2cup.svg")
 .then(data => {
     twoCup = data.documentElement
 }))
 
-promiseList.push(d3.xml("../svg/3cup.svg")
+promiseList.push(d3.xml("./svg/3cup.svg")
 .then(data => {
     threeCup = data.documentElement
 }))
 
-promiseList.push(d3.xml("../svg/6cup.svg")
+promiseList.push(d3.xml("./svg/6cup.svg")
 .then(data => {
     sixCup = data.documentElement
 }))
 
-promiseList.push(d3.xml("../svg/26cup.svg")
+promiseList.push(d3.xml("./svg/26cup.svg")
 .then(data => {
     manyCup = data.documentElement
 }))
 
 // empty icons
-promiseList.push(d3.xml("../svg/emptycup.svg")
+promiseList.push(d3.xml("./svg/emptycup.svg")
 .then(data => {
     emptyCup = data.documentElement
 }))
 
 // selected icons
 
-promiseList.push(d3.xml("../svg/1cup-select.svg")
+promiseList.push(d3.xml("./svg/1cup-select.svg")
 .then(data => {
     selectOne = data.documentElement
 }))
 
-promiseList.push(d3.xml("../svg/2cup-select.svg")
+promiseList.push(d3.xml("./svg/2cup-select.svg")
 .then(data => {
     selectTwo = data.documentElement
 }))
 
-promiseList.push(d3.xml("../svg/3cup-select.svg")
+promiseList.push(d3.xml("./svg/3cup-select.svg")
 .then(data => {
     selectThree = data.documentElement
 }))
 
-promiseList.push(d3.xml("../svg/6cup-select.svg")
+promiseList.push(d3.xml("./svg/6cup-select.svg")
 .then(data => {
     selectSix = data.documentElement
 }))
 
-promiseList.push(d3.xml("../svg/26cup-select.svg")
+promiseList.push(d3.xml("./svg/26cup-select.svg")
 .then(data => {
     selectMany = data.documentElement
 }))
