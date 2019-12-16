@@ -18,8 +18,8 @@
                     </g>
                 </g>
             </g>
-            <text id="90-gallons" font-family="PlayfairDisplay-Regular, Playfair Display" font-size="48" font-weight="normal" fill="#000000">
-                <tspan x="0" y="132">90 </tspan>
+            <text id="78-gallons" font-family="PlayfairDisplay-Regular, Playfair Display" font-size="48" font-weight="normal" fill="#000000">
+                <tspan x="0" y="132">78 </tspan>
                 <tspan x="0" y="196">gallons</tspan>
             </text>
             <text id="PER-PERSON-PER-DAY" font-family="OpenSans-Bold, Open Sans" font-size="12" font-weight="bold" fill="#2E2F30">
@@ -66,13 +66,13 @@
                 </g>
             </g>
             <g id="item" transform="translate(62.000000, 0.000000)">
-                <text id="TOILET-18-gallons" font-family="OpenSans-Bold, Open Sans" font-size="14" font-weight="bold" line-spacing="24">
+                <text id="TOILET-12-gallons" font-family="OpenSans-Bold, Open Sans" font-size="14" font-weight="bold" line-spacing="24">
                     <tspan x="0" y="15" fill="#2E2F30" fill-opacity="0.65">TOILET</tspan>
                     <tspan x="47.4619141" y="15" font-size="12" fill="#2E2F30"></tspan>
-                    <tspan x="0" y="39" font-family="OpenSans-BoldItalic, Open Sans" font-size="18" font-style="italic" fill="#000000">18 gallons</tspan>
+                    <tspan x="0" y="39" font-family="OpenSans-BoldItalic, Open Sans" font-size="18" font-style="italic" fill="#000000">12 gallons</tspan>
                 </text>
                 <text id="Average-person-uses" font-family="OpenSans, Open Sans" font-size="14" font-weight="normal" fill="#2E2F30">
-                    <tspan x="0" y="71">Average person uses the restroom 6 timese a day with 3 gallons per flush</tspan>
+                    <tspan x="0" y="71">Average person uses the restroom 6 times a day with 2 gallons per flush</tspan>
                 </text>
                 <path d="M1,54 L527.5,53.5" id="Line-5-Copy" stroke="#979797" stroke-width="0.3" stroke-linecap="square"></path>
             </g>
@@ -101,7 +101,7 @@
                 <text id="HYGIENE-(Washing-han" font-family="OpenSans-Bold, Open Sans" font-size="14" font-weight="bold" line-spacing="24">
                     <tspan x="0" y="15" fill="#2E2F30" fill-opacity="0.65">HYGIENE (Washing hands, washing face, brushing teeth, etc.)</tspan>
                     <tspan x="422.789062" y="15" font-size="12" fill="#2E2F30"></tspan>
-                    <tspan x="0" y="39" font-family="OpenSans-BoldItalic, Open Sans" font-size="18" font-style="italic" fill="#000000">18 gallons</tspan>
+                    <tspan x="0" y="39" font-family="OpenSans-BoldItalic, Open Sans" font-size="18" font-style="italic" fill="#000000">12 gallons</tspan>
                 </text>
                 <text id="Average-flow-rate-of" font-family="OpenSans, Open Sans" font-size="14" font-weight="normal" fill="#2E2F30">
                     <tspan x="0" y="71">Average flow rate of a bathroom faucet is 1.5 gallons per minute</tspan>

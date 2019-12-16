@@ -88,7 +88,7 @@ promiseList.push(d3.xml("./svg/6cup.svg")
     sixCup = data.documentElement
 }))
 
-promiseList.push(d3.xml("./svg/26cup.svg")
+promiseList.push(d3.xml("./svg/32cup.svg")
 .then(data => {
     manyCup = data.documentElement
 }))
@@ -121,7 +121,7 @@ promiseList.push(d3.xml("./svg/6cup-select.svg")
     selectSix = data.documentElement
 }))
 
-promiseList.push(d3.xml("./svg/26cup-select.svg")
+promiseList.push(d3.xml("./svg/32cup-select.svg")
 .then(data => {
     selectMany = data.documentElement
 }))
@@ -189,7 +189,7 @@ function updateCharts() {
     createChart(showerChart, 6, sixCup, selectSix)
 
     //toiletChart
-    createChart(toiletChart, 26, manyCup, selectMany)
+    createChart(toiletChart, 32, manyCup, selectMany)
 
     //hygieneChart
     createChart(hygieneChart, 3, threeCup, selectThree)
