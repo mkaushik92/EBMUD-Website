@@ -95,8 +95,8 @@
                         <tspan x="2.765625" y="17">8:30 AM: BRUSH TEETH</tspan>
                     </text>
                     <path d="M43.5,26.5 L138.5,26.5" id="Line" stroke-opacity="0.25" stroke="#2E2F30" stroke-width="0.5" stroke-linecap="square"></path>
-                    <text id="1-gallon" font-family="OpenSans-Semibold, Open Sans" font-size="24" font-weight="500" fill="#000000">
-                        <tspan x="45.2597656" y="53">1 gallon</tspan>
+                    <text id="1.5-gallons" font-family="OpenSans-Semibold, Open Sans" font-size="24" font-weight="500" fill="#000000">
+                        <tspan x="29.2695312" y="53">1.5 gallons</tspan>
                     </text>
                 </g>
             </g>
@@ -263,8 +263,8 @@
                         <tspan x="15.4648438" y="17">9 PM: BRUSH TEETH</tspan>
                     </text>
                     <path d="M43.5,26.5 L138.5,26.5" id="Line" stroke-opacity="0.25" stroke="#2E2F30" stroke-width="0.5" stroke-linecap="square"></path>
-                    <text id="4.5-gallons" font-family="OpenSans-Semibold, Open Sans" font-size="24" font-weight="500" fill="#000000">
-                        <tspan x="29.2695312" y="53">4.5 gallons</tspan>
+                    <text id="1.5-gallons" font-family="OpenSans-Semibold, Open Sans" font-size="24" font-weight="500" fill="#000000">
+                        <tspan x="29.2695312" y="53">1.5 gallons</tspan>
                     </text>
                 </g>
             </g>
