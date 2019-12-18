@@ -4,17 +4,17 @@ function earthquakeProbability() {
   var x = document.getElementById("numYears").value;
   if (x == "1") {
     var prob = "1%"
-    document.getElementById("prob").innerHTML = "There is a " +
+    document.getElementById("prob").innerHTML = "There is approximately a " +
     prob + " chance that an earthquake of 6.7 magnitude or higher will occur in the next " + x + " year.";
   }
   if (x == "5"){
     var prob = "6%"
-    document.getElementById("prob").innerHTML = "There is a " +
+    document.getElementById("prob").innerHTML = "There is approximately a " +
     prob + " chance that an earthquake of 6.7 magnitude or higher will occur in the next " + x + " years.";
   }
   if (x == "10") {
     var prob = "12%"
-    document.getElementById("prob").innerHTML = "There is a " +
+    document.getElementById("prob").innerHTML = "There is approximately a " +
     prob + " chance that an earthquake of 6.7 magnitude or higher will occur in the next " + x + " years.";
   }
   if (x == "30") {
