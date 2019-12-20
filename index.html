@@ -7,6 +7,8 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/chart.css">
 		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="https://d3js.org/d3.v5.min.js"></script>
+		<script type="text/javascript" src="js/chart.js" defer></script>
 	</head>
 
 	<body>
@@ -102,7 +104,7 @@
 				<ul>
 					<li>
 						Interdependencies with other systems. EBMUD's pumps rely on
-						electricity provided by PG&E which can be impacted by earthquakes.</li>
+					electricity provided by PG&E which can be impacted by earthquakes.</li>
 					<li>Soil types and geography: many of EBMUD's service areas are susceptible to landslides,
 						liquefaction areas, etc. </li>
 					<li>Their pipes cross a major fault</li>
@@ -152,7 +154,8 @@
 			width=100%>
 
 			<p style="font-size:12px">
-				<span style="background: #cee4ff; padding-left: 5px; padding-right: 5px;">
+				<span style="background: #cee4ff; padding-left: 5px;
+				padding-right: 5px;">
 				Source: U.S. Geological Survey (USGS)
 				</span>
 			</p>
@@ -162,17 +165,106 @@
 	<br/>
 	<hr class="lighter">
 
-	<div class= "loss-map">
+	<div class= "charts">
+		<!-- include loss framing by adding a "no store" button. once it's clicked, it will replace
+		the text in each section or show a paragraph that details what people would have to do
+		instead (e.g., buy water / find water / eat dry foods) -->
 		<h2><span>A Day without Water</span></h2>
 		<p>
-			This map shows what a day without water might look like if you do not
-			store water beforehand. Without stored water, you will likely need to make adjustments
-			to your daily activities, be unable to complete certain activities (e.g., shower or rinse),
-			and/or may spend more money on emergency water due to potential price inflation.
+			How much water would you save in the event of an emergency to support your
+			everyday activities? <br />This calculator shows the hard choices that have to
+			be made when living on emergency water.
 		</p>
-		<img src="svg/loss-map.svg" alt="Day Without Water map" width="100%">
+		<p class="bold-text">
+			Start by selecting the total number of gallons per day you would save,
+			either for yourself or  for your household. <br />
+		</p>
+		<div id="gallon-input">
+			 <!-- container for gallon input js -->
+		</div>
+		<br />
+		<p class="bold-text">
+			Next, tally your daily water usage by entering what you think is the least
+			you need for each activity.
+		</p>
+		<p class="half-page">
+ You may find that even your rock-bottom needs aren’t met and that you have
+to store more water,  cut down your water needs, or do without.
+		</p>
+		<br />
+		<div style= "position: sticky; top: 0; float: right; padding-left:20px; padding-right: 20px;
+		padding-bottom: 10px; padding-top: 10px; border: solid 1px">
+			<h3>Available water</h3>
+		<div id="gallon-to-cups">
+			<!-- container for gallon to cups visual js -->
+		</div>
+		<p class="half-caption">
+			Each cup represents one 8-oz glass of water. Each gallon is represented <body>
+				16 cups, or 2 rows of cups.
+			</body>
+		</p>
+			</div>
+		<h3>
+			<img style='vertical-align:bottom;' src="svg/food-icon.svg" width=30px>
+		Food
+		</h3>
+		<p class="half-page">
+			How many meals do you/your household have in a day? Each meal typically requires
+			2 cups of water.
+		</p>
+		<div id="food">
+			<!-- container for food water cup units -->
+		</div>
+		<br />
+		<h3>
+			<img style='vertical-align:bottom;' src="svg/drinking-icon.svg" width=30px>
+		Drinking Water
+		</h3>
+		<p class="half-page">
+			How many 8-oz glasses of water do you/your household drink ing per day?
+		</p>
+		<div id="drinking-water">
+			<!-- container for drinking water cup units -->
+		</div>
 		<br />
 
+		<h3>
+			<img style='vertical-align:bottom;' src="svg/shower-icon.svg" width=30px>
+		Showering
+		</h3>
+		<p class="half-page">
+			How many full body rinses do you/your household have in a day? Each rinse typically
+			requires 6 cups of water.
+		</p>
+		<div id="shower">
+			<!-- container for shower cup units -->
+		</div>
+		<br />
+
+		<h3>
+			<img style='vertical-align:bottom;' src="svg/toilet-icon.svg" width=30px>
+		Toilet
+		</h3>
+		<p class="half-page">
+			How many toilet flushes do you/your household have in a day? Each flush typically
+			requires 32 cups of water.
+		</p>
+		<div id="toilet">
+			<!-- container for toilet water cup units -->
+		</div>
+		<br />
+
+		<h3>
+			<img style='vertical-align:bottom;' src="svg/hygiene-icon.svg" width=30px>
+		Hygiene
+		</h3>
+		<p class="half-page">
+			How many times do you/your household brush teeth, wash hands, and rinse
+			face in a day? Each activity typically requires 3 cups of water.
+		</p>
+		<div id="hygiene">
+			<!-- container for hygiene water cup units -->
+		</div>
 	</div>
 	<hr class="lighter">
 
